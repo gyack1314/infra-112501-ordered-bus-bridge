@@ -1,0 +1,15 @@
+{"timestamp": 0, "type": "subscribe", "data": {"group": "report", "device": "bot2", "channel": "old"}}
+{"timestamp": 1, "type": "event", "data": {"device": "bot2", "epoch": 11, "seq": 1, "channel": "old", "transport": "o1", "body": {"step": "open"}}}
+{"timestamp": 2, "type": "event", "data": {"device": "bot2", "epoch": 11, "seq": 1, "channel": "new", "transport": "n101", "body": {"step": "open"}}}
+{"timestamp": 3, "type": "event", "data": {"device": "bot2", "epoch": 11, "seq": 3, "channel": "new", "transport": "n103", "body": {"step": "close"}}}
+{"timestamp": 4, "type": "event", "data": {"device": "bot2", "epoch": 11, "seq": 3, "channel": "old", "transport": "o3", "body": {"step": "abort"}}}
+{"timestamp": 5, "type": "complete_epoch", "data": {"device": "bot2", "epoch": 11, "last_seq": 3, "gaps": [[2, 2]]}}
+{"timestamp": 6, "type": "event", "data": {"device": "bot2", "epoch": 12, "seq": 1, "channel": "new", "transport": "n201", "body": {"step": "open"}}}
+{"timestamp": 7, "type": "poll", "data": {"group": "report", "device": "bot2", "member": "w1", "delivery": "deliver1"}}
+{"timestamp": 8, "type": "switch", "data": {"group": "report", "device": "bot2", "through": {"epoch": 11, "seq": 1}}}
+{"timestamp": 9, "type": "poll", "data": {"group": "report", "device": "bot2", "member": "w2", "delivery": "deliver2"}}
+{"timestamp": 10, "type": "ack", "data": {"group": "report", "device": "bot2", "member": "w1", "delivery": "deliver1"}}
+{"timestamp": 11, "type": "inspect", "data": {"device": "bot2", "group": "report"}}
+{"timestamp": 12, "type": "resolve", "data": {"device": "bot2", "epoch": 11, "seq": 3, "transport": "n103"}}
+{"timestamp": 13, "type": "poll", "data": {"group": "report", "device": "bot2", "member": "w2", "delivery": "deliver3"}}
+{"timestamp": 14, "type": "inspect", "data": {"device": "bot2"}}

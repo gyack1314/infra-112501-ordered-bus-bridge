@@ -1,0 +1,13 @@
+{"timestamp": 0, "type": "subscribe", "data": {"group": "slow", "device": "bot3", "channel": "old"}}
+{"timestamp": 1, "type": "subscribe", "data": {"group": "fresh", "device": "bot3", "channel": "new"}}
+{"timestamp": 2, "type": "event", "data": {"device": "bot3", "epoch": 1, "seq": 1, "channel": "old", "transport": "old-a", "body": {"step": "open"}}}
+{"timestamp": 3, "type": "event", "data": {"device": "bot3", "epoch": 1, "seq": 1, "channel": "new", "transport": "new-a", "body": {"step": "open"}}}
+{"timestamp": 4, "type": "poll", "data": {"group": "slow", "device": "bot3", "member": "m1", "delivery": "s1"}}
+{"timestamp": 5, "type": "switch", "data": {"group": "slow", "device": "bot3", "through": {"epoch": 1, "seq": 1}}}
+{"timestamp": 6, "type": "poll", "data": {"group": "fresh", "device": "bot3", "member": "m3", "delivery": "f1"}}
+{"timestamp": 7, "type": "complete_epoch", "data": {"device": "bot3", "epoch": 1, "last_seq": 1, "gaps": []}}
+{"timestamp": 8, "type": "expire", "data": {"group": "slow", "device": "bot3", "member": "m1", "delivery": "s1"}}
+{"timestamp": 9, "type": "ack", "data": {"group": "slow", "device": "bot3", "member": "m1", "delivery": "s1"}}
+{"timestamp": 10, "type": "retire", "data": {"device": "bot3", "through": {"epoch": 1, "seq": 1}}}
+{"timestamp": 11, "type": "poll", "data": {"group": "slow", "device": "bot3", "member": "m2", "delivery": "s2"}}
+{"timestamp": 12, "type": "inspect", "data": {"device": "bot3", "group": "slow"}}
